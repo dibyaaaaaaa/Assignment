@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Media</title>
+    <style>
+        .media-section {
+            margin-top: 20px;
+        }
+        .media-section div {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        .media-section img {
+            max-width: 100%;
+            height: auto;
+            padding: 15px 10px 5px 20px;
+        }
+        .images-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .navbar {
+            height: 100vh;
+            width: 250px;
+            background-color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding-top: 20px;
+        }
+        .navbar a {
+            padding: 16px;
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .navbar .nav-links {
+            flex-grow: 1;
+        }
+        .navbar .account {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+        .navbar .account a {
+            color: #aaa;
+            text-decoration: none;
+        }
+        .navbar .account a:hover {
+            color: white;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            background-color: #222;
+        }
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .content {
+            margin-left: 250px;
+            padding: 16px;
+            position: relative;
+        }
+        .search-bar {
+            position: fixed;
+            top: 16px;
+            right: 16px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">
+        <img src="logo3.jpg" alt="Logo">
+    </div>
+    <div class="nav-links">
+        <a href="home.html" target="_blank">Home</a>
+        <a href="customers.html" target="_blank">Customers</a>
+        <a href="departments.html" target="_blank">Departments</a>
+        <a href="media.html" target="_blank">Media</a>
+    </div>
+    <div class="account">
+        <a href="myaccount.html" target="_blank">Account</a>
+    </div>
+</div>
+
+<div class="content">
+    <input type="text" class="search-bar" placeholder="Search...">
+
+    <div class="media-section">
+        <div class="images">
+            <h2>Images</h2>
+            <div class="images-container">
+                <img src="image1.jpg" alt="Sample Image 1" width="350" height="400">
+                <img src="image2.jpg" alt="Sample Image 2" width="350" height="400">
+                <img src="image3.jpg" alt="Sample Image 3" width="350" height="400">
+            </div>
+        </div>
+
+        <div class="video">
+            <h2>Videos</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3JZ_D3ELwOQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l482T0yNkeo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="audio">
+            <h2>Audio</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6RssEMmVlPDk8bQ7s4VRyb?utm_source=generator" width="300" height="300" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6DwBCjospi1c9WsRVfoCwN?utm_source=generator" width="300" height="300" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7eQl3Yqv35ioqUfveKHitE?utm_source=generator" width="300" height="300" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
